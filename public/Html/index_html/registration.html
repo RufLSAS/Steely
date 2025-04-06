@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Регистрация</title>
+<link rel="stylesheet" href="/public/Style/index_css/registration.css"/>
+<script src="/public/Libery/libery_js/jquery-nice-select-1.1.0/js/jQ.js"></script>
+<script src="/public/Libery/libery_js/jquery-nice-select-1.1.0/js/nice-select.js"></script>
+<link rel="stylesheet" href="/public/Libery/libery_js/jquery-nice-select-1.1.0/css/nice-select.css">
+<script src="/public/Script/registration.js"></script>
+</head>/Пробный/libery/libery.js/jquery-nice-select-1.1.0/js/jquery.nice-select.js
+<body>
+
+<div class="form">
+    <h1 class="form-title">
+        Пожалуйста, заполните форму регистрации, для пользования сайтом.
+    </h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <input class="input" type="text" id="name" name="name" required>
+        <label class="label-text" for="">Введите Ваше имя, либо псевдоним</label>
+    </div>
+
+    <div class="form-group">
+        <input class="input" type="e-mail" id="email" name="e-mail" required>
+        <label class="label-text" for="">Укажите Вашу электронную почту</label>
+    </div>
+
+    <div class="form-group">
+        <input class="input js-input" type="password" name="password" required>
+        <label class="label-text" for="">Придумайте надёжный пароль</label>
+    </div>
+
+    <div class="form-group">
+            <input class="input js-input" type="password" name="password_confirm" required>
+            <label class="label-text" for="">Повторите введённый пароль</label>
+    </div>
+
+    <select class="select" name="language">
+        <option>Русский</option>
+        <option>English</option>
+        <option>Spain</option>
+    </select>
+    
+    <input id='one' type='checkbox' id="check-1" style="opacity: 0;"/>
+    <label for='one'>
+        <span class="check-kek"></span>
+            
+        <div class="link-ease-in-out">
+            <span class="spisok">Я ознакомлен(а) и соглашаюсь с &ensp; <a class="underline-one" href="/public/Html/index_html/rules.html"> правилами Steely</a>
+            </span>
+        </div>       
+            <ins></ins>
+    </label>
+
+    <div class="btn__autorization">
+            <button href="verificationMail.html" class="bn62">
+                    Зарегистрироваться
+            </button>
+    </div>
+
+    <p class="login">Уже есть аккаунт? 
+            <span class="link-ease-in-out">
+                    <a class="Login-link" href="Вход.html">Войти</a> </p>
+            </span>
+    </form>
+</div>
+</body>
+</html>

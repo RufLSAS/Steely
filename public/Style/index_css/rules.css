@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(119, 36, 226);
+    min-height: 100%;
+    min-width: 100%;
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    overflow-x:hidden;
+    line-height: 1.5
+}
+
+.header {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 41%;
+    padding-right: 30%;
+    font-size: 25px;
+}
+
+.lover__leader {
+    padding-top: 90px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+}
+
+.lover {
+    line-height: 2;
+}
+
+.two {
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 19px;
+}
+
+a {
+    text-decoration:none;
+    display: inline-block;
+    line-height: 2;
+    color:#128622;
+}
+a:after {
+    display: block;
+    content: "";
+    height: 3px;
+    width: 20%; 
+    background-color: #225384;
+    transition: width 0.20s ease-in-out;
+}
+    a:hover:after,
+    a:focus:after {
+    width: 100%;
+}

@@ -1,0 +1,408 @@
+
+body {
+    background-color: #181818;
+    color: #fff;
+    font-size: 17px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+#nav-icon3 {
+    width: 40px;
+    height: 30px;
+    top: 17px;
+    left: 27px;
+    position: relative;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#nav-icon3 span {
+    display: block;
+    position: absolute;
+    height: 2.6px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+    top: 12px;
+}
+#nav-icon3 span:nth-child(4) {
+    top: 25px;
+}
+#nav-icon3.open span:nth-child(1),#nav-icon3.opened span:nth-child() {
+    top: 12px;
+    width: 0%;
+    left: 50%;
+}
+
+.burger {
+    position: sticky;
+top: 10px;
+}
+
+.list {
+    position: relative;
+    top: 25px;
+    padding: 2px;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    color: rgb(255, 0, 0);
+}
+.line {
+
+    stroke: black;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.sidebar #nav-icon3 span {
+    background: rgb(255, 255, 255);
+}
+
+body.sidebar-opened {
+    overflow:hidden;
+}
+
+.hidden-overley {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    background: #020202;
+    opacity:0;
+    width:0;
+    height:0;
+    transition: opacity .45s;
+}
+.hidden-overley.show {
+    height: 100%;
+    width: 100%;
+    opacity:0.5;
+    transition: opacity .25s;
+}
+.sidebar{
+    position: fixed;
+    z-index:100;
+    width: 300px;
+    height: 100%;
+    left: -300px;
+    top:0;
+    background: #181818;
+    transition: left 0.4s ease;
+    overflow-x: hidden;
+}
+.sidebar .d-flex.p-2 {
+    display:-webkit-box;
+    display: flex;
+    padding: 10px!important;
+    left: 10px;
+}
+.sidebar .text{
+    color: rgb(37, 32, 32);
+    font-size: 24px;
+    font-weight: 600;
+    background: #181818;
+}
+
+.sidebar .text a {
+    color: white;
+}
+
+.Logo__pushmenutop {
+    position: relative;
+    top: 6.7vh;
+    left: 14.5vh;
+}
+
+.Logo__pushmenu {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding-top: 100px;
+    padding-left: 1px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Logo__push {
+    text-decoration: none;
+    padding-left: 7px;
+    padding-right: 15px;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pseudo-logo {
+    position: relative;
+    top: 4.35vh;
+    left: 16vh;
+}
+
+.pseudo-logo__home {
+    color: #00d0d0;
+    font-size: 20px;
+}
+
+.sidebar.show{
+    left: 0px;
+}
+
+.sidebar ul{
+    background: none;
+    height: auto;
+    width: 100%;
+    list-style: none;
+        margin: -90px;
+        left: -70px;
+}
+.sidebar ul li{
+    max-width: 100px;
+    line-height: 60px;
+    left: 0px;
+    margin: 0px;
+}
+
+.sidebar ul li a{
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 90px;
+    margin: 0px;
+    font-weight: 500;
+    display: block;
+    width: 300px;
+    
+}
+/*ховеры для лишек*/
+.sidebar ul li a:hover{
+    cursor: pointer;
+    
+    border-radius: 22px 22px 22px 22px;
+    background-color: #626264;
+    transition-duration: .32s;
+}
+
+.Logo {
+    position: fixed;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    cursor: pointer;
+    left: 77px;
+    top: 11px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.Spisok-info-li {
+    position: relative;
+    display: inline-block;
+    top: 25px;
+}
+
+.We__info-li {
+    position: relative;
+    left: 63px;
+    top: -3px;
+    font-size: 18px;
+    color: #fff;
+}
+.Avatar__info-li {
+    position: relative;
+    left: 120px;
+    top: -30px;
+    font-size: 18px;
+    color: #fff;
+}
+.Pravila__info-li {
+    position: relative;
+    left: 53px;
+    top: -56px;
+    left: 201px;
+    font-size: 18px;
+}
+.Subs__info-li {
+    position: relative;
+    left: 63px;
+    top: -59px;
+    font-size: 18px;
+}
+
+.info-ul {
+    position: relative;
+    top: 1px;
+    left: 43%;
+    color: rgb(151, 151, 151);
+    padding: 8px 8px 9px 0px;
+}
+
+.we_lik {
+    text-decoration: none;
+    color: #00d0d0;
+    cursor: pointer;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+
+.header {
+    width: 100%;
+    height: 65px;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    min-height: 2em;
+    background-color: #202020;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+    opacity: 5;
+}
+
+.search__block {
+    margin-left: 35%;
+    display: flex;
+    top: -16px;
+    
+}
+
+.search {
+    display: block;
+    min-width: 650px;
+    max-width: 650px;
+    min-height: 39px;
+    max-height: 39px;
+    padding-left: 18px;
+    margin-bottom: 25px;
+    background-color: #323233;
+    border: #1a1919;
+    color: white;
+    font-size: 1.9vh;
+    outline: none;
+    align-content: center;
+    border-radius: 22px 22px 22px 22px;
+}
+
+form{
+    position: relative;
+    width: 200px;
+}
+
+form input {
+    width: 100%;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+form input:placeholder-shown + .clear__btn{
+    opacity: 0;
+    pointer-events: none;
+} 
+
+.clear__btn {
+    position: absolute;
+    border: none;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    right: -47.5vh;
+    margin: 7px;
+    background: rgb(97, 97, 97);
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    transition: .1s;
+    color: #fff;
+}
+
+.search-close__icons {
+    position: relative;
+    top: 2px;
+}
+
+.btn__search {
+    position: absolute;
+    display: block;
+    width: 64px;
+    min-height: 39px;
+    max-height: 39px;
+    background-repeat: no-repeat;
+    outline: none;
+    background-color: #2b2b2b;
+    border: #f5f5ff;
+    cursor: pointer;
+    right: -56vh;
+    padding-left: 0px;
+    border-radius: 22px 22px 22px 22px;
+    margin: 0px;
+}
+
+hr {
+    position: relative;
+    color: red;
+    
+    width:345px;
+}
+
+.li-list{
+    padding-right: 0;
+}
+
+.li__icons {
+padding-top: 21px;
+padding-right: 6px;
+}
+
+.li-pisock {
+    padding-right: 100px;
+    margin: 0px;
+}
+
+input.search:focus{
+    border: 2px solid rgb(84, 84, 173);
+}
+
+.li__text {
+    position: absolute;
+    margin-top: 12px;
+    padding-top: -1px;
+}
+
+.testy {
+    width: 1000px;
+}

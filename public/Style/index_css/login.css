@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(25, 25, 36);
+    font-size: 17px;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    background-color: #181818;
+    max-width: 600px;
+    min-width: 150px;
+    padding: 50px;
+    top: 8.5%;
+    border-radius: 45px;
+    border: #fff;
+}
+
+.form .form-title  {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    top: -26px;
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.form-group {
+    padding-left: 35%;
+    padding: 3px;
+    margin: 5px;
+}
+
+.form form .form-group input {
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #03a9f4;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.form form .form-group input:focus ~ .label-text, 
+.form form .form-group input:valid ~ .label-text {
+    top: -10px;
+    font-size: 14px;
+}
+
+.form form .form-group input:focus {
+    outline: none;
+}
+
+.form form .form-group {
+    position: relative;
+}
+
+.form form .form-group .label-text {
+    color: #03a9f4;
+    position: absolute;
+    transition: 0.25s;
+    top: 12px;
+    left: 0;
+    font-size: 19px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    pointer-events: none;
+}
+
+.password-btn {
+    position: absolute;
+    right: 15px;
+    top: -1px;
+
+}
+
+.password-btn.active::after {
+    opacity: 0;
+}
+
+.password-btn::after {
+    position: absolute;
+    content: '';
+    top: 12.5px;
+    right: -3px;
+    width: 35px;
+    height: 3.5px;
+    background: #fefefe;
+    transform: rotate(45deg);
+    transition: 3s all ease;
+    opacity: 1;
+}
+
+.bn62 {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2d5053;
+    border-radius: 50px;
+    display: flex;
+    left: 23%;
+    top: 7px;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 18em;
+    font-size: large;
+    font-weight: 600;
+    transition: 0.25s ease-in-out, color 0.25s ease-in-out;
+}
+
+.btn__autorization {
+    position: relative;
+    margin-right: 80px;
+}
+
+.bn62:hover {
+    background-color: rgb(51, 51, 51);
+    color: #ccc;
+    transition: all 0.25s;
+}
+
+.login {
+    position: relative;
+    font-family: 'Roboto';
+    color: #fff;
+    top: 20px;
+    font-size: 17px;
+}
+
+.Login-link {
+    position: relative;
+    left: 2%;
+    text-decoration: none;
+    font-size: 19px;
+    color: #8425c4;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .25s;
+}
+
+.link-ease-in-out a {
+    display: inline-block;
+    color: #00bfff; /* Цвет обычной ссылки */
+    line-height: 1;
+    text-decoration: none; /* Убираем подчеркивание */
+    cursor: pointer;
+}
+.link-ease-in-out a:after {
+    background-color: rgb(115, 115, 182); /* Цвет линии при наведении на нее курсора мыши */ border: 1px solid rgb(39, 39, 87);
+    display: block;
+    content: "";
+    height: 3px; /* Высота линии */
+    width: 15px;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
+

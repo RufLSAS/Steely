@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/Style/add_css/li-Account.css">
+    <link rel="stylesheet" href="/public/Style/scroll.css">
+    <script src="/public/Libery/libery_js/jquery-nice-select-1.1.0/js/jQ.js"></script>
+    <title>Настройки акканта</title>
+</head>
+<body>
+    <header class="header">
+    
+        <div id="nav-icon3" class="pushmenu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    <div class="Logo"><a class="Logo__pushmenu" href="/public/Html/index_html/steely.html">STEELY</a> <span class="pseudo-logo">Studio</span></div>
+
+    <nav class="sidebar active">
+        <div class="text d-flex p-2">
+            <div id="nav-icon3" class="pushmenu">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="pushmenu opened">
+                <span></span> 
+            </div>
+        </div>
+
+        <ul class="spisok__list">
+            <div class="Logo__pushmenutop">
+                <a class="Logo__pushmenu" href="/public/Html/index_html/steely.html">STEELY</a>
+            </div>        
+
+            <span class="pseudo-logo">
+                <h3 class="pseudo-logo__home"> Главная </h3>
+            </span>
+
+            <li class="list"><a href="/public/Html/add_html/account.html"><img class="li__icons" src="/public/Img/icons/icons-user.png" width="32px"><span class="li__text"> Мой аккаунт </span></a></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/subscribers.png" width="32px"><span class="li__text">Мои подписки</span></a></li>
+            <li class="list"><hr></li> 
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/history.png" width="32px"><span class="li__text"> История просмотров </span></a></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/smile-like.png" width="32px"><span class="li__text"> Понравившиеся видио </span></a></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/all-history.png" width="32px"><span class="li__text"> История </span></a></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/playlist.png" width="32px"><span class="li__text"> Мои плейлисты </span></a></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/history-64.png" width="32px"><span class="li__text"> Смотреть позже </span></a></li>
+            <li class="list"><hr></li>
+            <li class="list"><a href="/public/Html/add_html/settings.html"><img class="li__icons" src="/public/Img/icons/settings.png" width="32px"><span class="li__text"> Настройки </span></a></li>
+            <li class="list"><hr></li>
+            <li class="list"><a href="#"><img class="li__icons" src="/public/Img/icons/flag.png" width="32px"><span class="li__text"> Жалобы на авторов </span></a></li>
+            <li class="list"><a href="/public/Html/add_html/suggestions.html"><img class="li__icons" src="/public/Img/icons/newsletter.png" width="32px"><span class="li__text"> Отзывы и предложения </span></a></li>
+            <li class="list"><hr></li>
+            <div class="Spisok-info-li">
+                <div class="We__info-li"> <a class="we_lik" href="#"> О нас </a> </div>
+                <div class="Avatar__info-li"> <a class="we_lik" href="#"> Авторам </a> </div>
+                <div class="Pravila__info-li"> <a class="we_lik" href="#"> Правила Steely </a> </div>
+                <div class="Subs__info-li"> <a class="we_lik" href="#"> Рекламодателям </a> </div>
+                <div class="Subs__info-li"> <a class="we_lik" href="#"> Политика конфедециальности </a> </div>
+            </div>    
+            <div class="info-ul"> © 2025 Steely LLC </div>    
+        </ul>  
+    </nav>
+    <div class="hidden-overley"></div>
+
+    <div class="search-wrapper">
+        <form class="search__block" role="search" method="get" class="search-form" action="#">
+            <input class="search" type="text" placeholder="Введите запрос">
+            <button class="clear__btn" type="reset"> <img class="search-close__icons" src="/public/Img/icons/close.png" width="18px"> </button>
+            <button type="submit" class="btn__search"> <img src="/public/Img/icons/search.png" width="24px"> </button>
+        </form>  
+    </div>
+    
+</header>
+
+<div class="avatar-wrapper">
+	<img class="profile-pic" src="/public/Img/icons/HappyNewYear.jpg" />
+	<div class="upload-button">
+		<i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+	</div>
+	<input class="file-upload" type="file" accept="image/*"/>
+</div>
+
+<div class="account-name">
+    <div class="name">SteelyTube</div>
+    <div class="pseudo__name">@Steely</div>
+    <div class="subscribers__name">100 млн подписчиков</div>
+    <button id="btn-list" class="subscribe__user-button">  
+        <span class="fa fa-hand-o-down  subscribe__user">Подписаться</span>
+    </button>
+</div>
+
+<div class="drag-area">
+    <div class="icon"><i class="fas fa-cloud-uploader-alt"></i></div>
+    <strong class="info__drag-drop">Разрешены: </strong>
+    <span class="info__files"> PNG / JPEG / IMG / GIF</span>
+    <button class="download-files__btn">Перетащите файл</button>
+    <input type="file" hidden class="add__file-back">
+</div>
+    
+<hr class="account">
+<div class="wrapper-menu__navigation">
+    <span class="menu__navigation">
+        <a href="#" class="navigation"> Главная </a>
+        <a href="#" class="navigation"> Видео </a>
+        <a href="#" class="navigation"> Эфиры </a>
+        <a href="#" class="navigation"> Плейлисты </a>
+        <a href="#" class="navigation"> Посты </a>
+        <a href="#" class="navigation"> Рекомендуемое </a>
+        <a href="#" class="navigation"> О канале </a>
+    </span>
+</div>
+
+
+<script src="/public/Script/sidebar.js"></script>
+<script src="/public/Script/account.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(25, 25, 36);
+    font-size: 17px;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.form {
+    position: absolute;
+    background-color: #181818;
+    max-width: 600px;
+    min-width: 150px;
+    padding: 50px;
+    top: 8.5%;
+    border-radius: 45px;
+    border: #fff;
+}
+
+.form .form-title  {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    top: -26px;
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.form-group {
+    padding-left: 35%;
+    padding: 3px;
+    margin: 5px;
+}
+
+.form form .form-group input {
+    width: 100%;
+    background: transparent;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #03a9f4;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.form form .form-group input:focus ~ .label-text, 
+.form form .form-group input:valid ~ .label-text {
+    top: -3px;
+    font-size: 14px;
+}
+
+.form form .form-group input:focus {
+    outline: none;
+}
+
+.form form .form-group {
+    position: relative;
+}
+
+.form form .form-group .label-text {
+    color: #03a9f4;
+    position: absolute;
+    transition: 0.25s;
+    top: 12px;
+    left: 0;
+    font-size: 19px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    pointer-events: none;
+}
+
+input[type='checkbox'] {
+    height: 0; width: 0;
+}
+
+.check-kek {
+    position: relative;
+    left: 3vh;
+    top: -1.9vh;
+}
+
+.spisok {
+    position: relative;
+    top: -1.7vh;
+    left: 2.6vh;
+}
+
+.phone-txt {
+    position: relative;
+    color: #9E9E9E;
+    font-size: 14px;
+    top: -4px;
+}
+
+input[type='checkbox'] + label{
+    position: relative;
+    display: flex;
+    margin: .6em 0;
+    align-items: center;
+    color:  #9E9E9E;
+    transition: color 250ms cubic-bezier(.4,.0,.23,1);
+    cursor: pointer;
+}
+
+input[type='checkbox'] + label > span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1em;
+    width: 1.1em;
+    height: 1.1em;
+    background: transparent;
+    border: 2px solid #bbbaba;
+    border-radius: 20px;
+    cursor: pointer;  
+    transition: all 250ms cubic-bezier(.4,.0,.23,1);
+}
+
+input[type='checkbox'] + label:hover, input[type='checkbox']:focus + label{
+    color: rgb(117, 101, 101);
+    cursor: pointer;
+}
+input[type='checkbox'] + label:hover > span, input[type='checkbox']:focus + label > span {
+    background: rgba(#fff);
+}
+input[type='checkbox']:checked + label > ins { 
+    height: 100%; 
+    background: rgba(#fff);
+}
+
+input[type='checkbox']:checked + label > span:before {
+    content: "";
+    position: absolute;
+    top: .6em;
+    left: .3em;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transform: rotate(45deg);
+    transform-origin: 0% 100%;
+    animation: checkbox-check 55ms 50ms cubic-bezier(.4,.0,.23,1) forwards;
+    cursor: pointer;
+}
+
+@keyframes shrink-bounce {
+    0%{
+    transform: scale(1);
+}
+    33%{    
+    transform: scale(.15);
+}
+    100%{
+    transform: scale(1);    
+}
+}
+@keyframes checkbox-check {
+  0%{
+    width: 0;
+    height: 0;
+    border-color: #212121;
+    transform: translate3d(0,0,0) rotate(45deg);
+}
+    33%{
+    width: .2em;
+    height: 0;
+    transform: translate3d(0,0,0) rotate(45deg);
+}
+    100%{    
+    width: .29em;
+    height: .69em;
+    left: 2px;
+    top: 5px;    
+    border-color: #ffffff;
+    transform: translate3d(0,-.5em,0) rotate(45deg);
+}
+}
+
+.bn62 {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2d5053;
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    left: 23%;
+    top: -8px;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    width: 18em;
+    font-size: large;
+    font-weight: 600;
+    transition: 0.25s ease-in-out, color 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.btn__autorization {
+    position: relative;
+    margin-right: 80px;
+}
+
+.bn62:hover {
+    background-color: rgb(51, 51, 51);
+    color: #ccc;
+    transition: all 0.25s;
+}
+
+.login {
+    position: relative;
+    font-family: 'Roboto';
+    color: #fff;
+    top: 20px;
+    font-size: 17px;
+}
+
+.Login-link {
+    position: relative;
+    left: 2%;
+    text-decoration: none;
+    font-size: 19px;
+    color: #8425c4;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .25s;
+}
+
+.link-ease-in-out a {
+    display: inline-block;
+    color: #00bfff;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-ease-in-out a:after {
+    background-color: #5466ce;
+    display: block;
+    content: "";
+    height: 3px;
+    width: 19px;
+    -webkit-transition: width .2s ease-in-out;
+    -moz--transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
+}
+.link-ease-in-out a:hover:after,
+.link-ease-in-out a:focus:after {
+    width: 100%;
+}
